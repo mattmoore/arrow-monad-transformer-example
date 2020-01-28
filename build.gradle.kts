@@ -30,6 +30,10 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+    implementation("io.arrow-kt:arrow-core:0.10.4")
+    implementation("io.arrow-kt:arrow-syntax:0.10.4")
+    implementation("io.arrow-kt:arrow-fx:0.10.4")
 }
 
 application {
