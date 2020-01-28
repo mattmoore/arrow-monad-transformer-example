@@ -18,6 +18,8 @@ repositories {
     jcenter()
 }
 
+val arrowVersion = "0.10.4"
+
 dependencies {
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
@@ -31,9 +33,10 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
-    implementation("io.arrow-kt:arrow-core:0.10.4")
-    implementation("io.arrow-kt:arrow-syntax:0.10.4")
-    implementation("io.arrow-kt:arrow-fx:0.10.4")
+    implementation("io.arrow-kt:arrow-core:$arrowVersion")
+    implementation("io.arrow-kt:arrow-syntax:$arrowVersion")
+    implementation("io.arrow-kt:arrow-fx:$arrowVersion")
+    implementation("io.arrow-kt:arrow-mtl:$arrowVersion")
 }
 
 application {
